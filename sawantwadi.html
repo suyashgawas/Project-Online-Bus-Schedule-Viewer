@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sawantwadi Bus Stand</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🚍 Sawantwadi Bus Stand</h1>
+  <p>MSRTC Style Bus Timetable</p>
+  <a href="https://npublic.msrtcors.com/" target="_blank" class="book-btn">
+  🎫 Book Ticket (MSRTC)
+</a>
+  <a href="admin.html" class="admin-btn">Admin</a>
+</header>
+
+<div class="ticker">
+  <div class="ticker-text">
+    🚌 Welcome to Sawantwadi Bus Stand | Pune Bus Delayed | Mumbai On Time | Goa Special Available
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search route (Mumbai, Pune...)">
+
+    <select id="busTypeFilter">
+      <option value="">All Types</option>
+      <option value="Ac">AC</option>
+      <option value="Non-Ac">Non-AC</option>
+      <option value="Sleeper">Sleeper</option>
+      <option value="Local">Local</option>
+    </select>
+
+    <button onclick="searchBus()">Search</button>
+  </div>
+
+  <div id="busList"></div>
+
+</div>
+
+<footer>
+  
+  © 2026 Sawantwadi Bus Stand | MSRTC Style UI
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
