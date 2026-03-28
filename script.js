@@ -272,6 +272,14 @@ const defaultBuses = [
      { time: "15:30 PM", route: "Sawantwadi → Aambegaon", type: "Non-AC" }, 
 ];
 
+// TICKER LOAD
+function loadTicker() {
+  const ticker = localStorage.getItem("tickerText") || 
+    "🚌 Welcome to Sawantwadi Bus Stand | All buses running on time";
+
+  document.getElementById("tickerText").innerText = ticker;
+}
+
 /* STORAGE */
 let storedBuses = JSON.parse(localStorage.getItem("buses")) || [];
 let buses = [...defaultBuses, ...storedBuses];
@@ -312,6 +320,7 @@ function searchBus() {
   });
 
   displayBuses(filtered);
+  loadTicker();
 }
 
 /* LOAD */
