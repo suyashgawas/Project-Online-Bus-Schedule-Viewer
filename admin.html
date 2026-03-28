@@ -167,7 +167,11 @@
 <!-- MAIN -->
 <div class="main">
   <div class="header">Dashboard</div>
-
+<div class="card">
+  <h3>Update Announcement Ticker</h3>
+  <input type="text" id="tickerInput" placeholder="Enter announcement...">
+  <button class="add-btn" onclick="updateTicker()">Update Ticker</button>
+</div>
   <div class="card">
     <h3>Add New Bus</h3>
     <input type="text" id="route" placeholder="Route (Sawantwadi → Pune)">
@@ -266,6 +270,19 @@
   }
 
   displayBuses();
+  function updateTicker() {
+  const text = document.getElementById("tickerInput").value;
+
+  if (!text) {
+    alert("Enter ticker text");
+    return;
+  }
+
+  localStorage.setItem("tickerText", text);
+  alert("Ticker Updated Successfully ✅");
+
+  document.getElementById("tickerInput").value = "";
+}
 </script>
 
 </body>
