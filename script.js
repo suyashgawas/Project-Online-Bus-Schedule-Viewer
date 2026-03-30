@@ -325,3 +325,10 @@ function searchBus() {
 
 /* LOAD */
 displayBuses(buses);
+
+// SECRET KEY COMBINATION (CTRL + SHIFT + A)
+document.addEventListener("keydown", function(e) {
+  if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "a") {
+    window.location.href = "admin.html";
+  }
+});
