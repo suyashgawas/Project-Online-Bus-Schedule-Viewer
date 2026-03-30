@@ -162,3 +162,23 @@ footer {
     padding: 10px;
   }
 }
+.bottom-book {
+  text-align: center;
+  margin: 20px;
+}
+
+.bottom-book a {
+  display: inline-block;
+  background: #b30000;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.bottom-book a:hover {
+  background: #800000;
+}
