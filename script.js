@@ -332,4 +332,37 @@ document.addEventListener("keydown", function(e) {
     window.location.href = "admin.html";
   }
 });
+function toggleMenu() {
+  const menu = document.getElementById("dropdownMenu");
+  menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
 
+// Close menu when clicking outside
+document.addEventListener("click", function(e) {
+  const menu = document.getElementById("dropdownMenu");
+  const icon = document.querySelector(".profile-icon");
+
+  if (!icon.contains(e.target) && !menu.contains(e.target)) {
+    menu.style.display = "none";
+  }
+});
+
+// Login / Logout
+function handleLogin() {
+  const isLoggedIn = localStorage.getItem("userLoggedIn");
+
+  if (isLoggedIn === "true") {
+    localStorage.removeItem("userLoggedIn");
+    alert("Logged out successfully");
+  } else {
+    localStorage.setItem("userLoggedIn", "true");
+    alert("Logged in successfully");
+  }
+}
+
+// Exit function
+function exitApp() {
+  if (confirm("Do you want to exit?")) {
+    window.close(); // works only in some browsers
+  }
+}
