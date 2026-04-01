@@ -13,7 +13,15 @@
 <header>
   <h1>🚍 Sawantwadi Bus Stand</h1>
   <p>MSRTC Bus Timetable</p>
- 
+ <div class="profile-container">
+  <div class="profile-icon" onclick="toggleMenu()">👤</div>
+
+  <div class="dropdown-menu" id="dropdownMenu">
+    <a href="#" onclick="handleLogin()">Login / Logout</a>
+    <a href="#">My Bookings</a>
+    <a href="#" onclick="exitApp()">Exit</a>
+  </div>
+</div>
 
 <div class="ticker">
   <div class="ticker-text" id="tickerText"></div>
