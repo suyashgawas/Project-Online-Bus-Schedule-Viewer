@@ -168,4 +168,43 @@ footer {
 .bottom-book a:hover {
   background: #800000;
 }
+.profile-container {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.profile-icon {
+  font-size: 22px;
+  cursor: pointer;
+  background: white;
+  color: #b30000;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 45px;
+  background: white;
+  min-width: 150px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+  background: #f2f2f2;
+}
 
