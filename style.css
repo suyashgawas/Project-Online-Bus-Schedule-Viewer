@@ -168,3 +168,111 @@ footer {
 .bottom-book a:hover {
   background: #800000;
 }
+
+.profile-container {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.profile-icon {
+  font-size: 22px;
+  cursor: pointer;
+  background: white;
+  color: #b30000;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 45px;
+  background: white;
+  min-width: 150px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+  background: #f2f2f2;
+}
+
+/* MODAL BACKGROUND */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+/* MODAL BOX */
+.modal-content {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  margin: 10% auto;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+/* INPUT */
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* BUTTONS */
+.modal-content button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  background: #b30000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-btn {
+  background: #004aad;
+}
+
+/* CLOSE BUTTON */
+.close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+
+  box-sizing: border-box; /* 🔥 THIS FIXES THE ISSUE */
+}
+
